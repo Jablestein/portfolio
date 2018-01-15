@@ -2,8 +2,7 @@ body {
   background-color: #000; }
 
 .no-point {
-  pointer-events: none;
-}
+  pointer-events: none; }
 
 .bg-black {
   background: #000;

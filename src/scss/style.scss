@@ -2,6 +2,10 @@ body {
     background-color: #000;
 }
 
+.no-point {
+  pointer-events: none;
+}
+
 .bg-black{
   background:#000;
   color:#fff;
