@@ -67,8 +67,6 @@
       </div>
     </header>
 
-
-
     <!-- Games -->
     <div id="games" class="collapse show">
         <div class="card card-body py-5" id="games-tab">
@@ -87,9 +85,10 @@
                     </a> -->
                 </div>
                 <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=R1Iq4rilAjg" data-toggle="lightbox">
+                    <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid" data-toggle="collapse" data-target="#dwarvenden">
+                    <!-- <a href="https://www.youtube.com/watch?v=R1Iq4rilAjg" data-toggle="lightbox">
                         <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid">
-                    </a>
+                    </a> -->
                 </div>
                 <div class="col-md-3">
                     <a href="https://www.youtube.com/watch?v=yBWcOUBpa_8" data-toggle="lightbox">
@@ -127,7 +126,7 @@
             </div>
         </div>
 
-        <div id="dvworld" class="collapse">
+        <div id="dvworld" class="collapse the-game">
             <div class="card card-body bg-primary text-white py-5">
                 <h6><i>Lead Game Designer - Dragonvale World - iOS/Android</i></h6>
                     <ul>
@@ -144,6 +143,20 @@
             </div>
         </div>
 
+        <div id="dwarvenden" class="collapse the-game">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Lead Game Designer - Dwarven Den - iOS</i></h6>
+                    <ul>
+                        <li>Designed and implemented nearly fifty levels of content for final version of game.</li>
+                        <li>Overseeing and providing feedback on creation of level content by three other members of
+                        the design team.</li>
+                        <li>Analyzing live game retention and monetization numbers and developing design solutions
+                        targeted at addressing concerns of such metrics.</li>
+                        <li>Collaborated in the design of core systems, mechanics, player abilities, gear, perks, and
+                        social features.</li>
+                    </ul>
+            </div>
+        </div>
     </div>
 
 
@@ -350,11 +363,17 @@
 
     });
 
-    $('#dvworld').on('shown.bs.collapse', function(event){
+    //Why doesn't click work as an event for this?
+    $('div.the-game').on('shown.bs.collapse', function(event){
         var game = this;
         window.scrollTo($(game).offset().left, $(game).offset().top);
         console.log(game);
     });
+
+    // $('#dvworld').on('shown.bs.collapse', function () {
+    //   this.scrollIntoView();
+    // });
+
 
     // $('img[id="game"]').on('shown.bs.collapse', function(event) {
     //     var game = $(event.target).data('target');
