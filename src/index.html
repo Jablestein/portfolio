@@ -78,14 +78,16 @@
             <!-- <h3>What have I built?</h3>
             <p class="card-text">consectetur adipisicing elit. Dolorum nulla et, modi harum hic deserunt.</p> -->
             <div class="row no-gutters">
-                <div class="col-md-3">
-                    <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" data-toggle="collapse" data-target="#dvworld">
+                <div class="col-md-3 the-game">
+                    <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" data-toggle="collapse"
+                    data-target="#dvworld">
                     <!-- <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="#lightbox">
                         <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" >
                     </a> -->
                 </div>
-                <div class="col-md-3">
-                    <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid" data-toggle="collapse" data-target="#dwarvenden">
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#dwarvenden">
+                    <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid" data-toggle="collapse"
+                    data-target="#dwarvenden">
                     <!-- <a href="https://www.youtube.com/watch?v=R1Iq4rilAjg" data-toggle="lightbox">
                         <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid">
                     </a> -->
@@ -143,7 +145,7 @@
             </div>
         </div>
 
-        <div id="dwarvenden" class="collapse the-game">
+        <!-- <div id="dwarvenden" class="collapse the-game">
             <div class="card card-body bg-primary text-white py-5">
                 <h6><i>Lead Game Designer - Dwarven Den - iOS</i></h6>
                     <ul>
@@ -155,6 +157,22 @@
                         <li>Collaborated in the design of core systems, mechanics, player abilities, gear, perks, and
                         social features.</li>
                     </ul>
+            </div>
+        </div> -->
+
+        <div id="dwarvenden" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Drarven Den</i></h6>
+                    <ul>
+                        <li>A bunch of shit here</li>
+                        <li>A bunch more shit</li>
+                        <li>Oh look at me, I'm so important I did stuff with dwarves in dens</li>
+            </div>
+        </div>
+
+        <div id="ragdollblaster3" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Ragdoll Blaster 3</i></h6>
             </div>
         </div>
     </div>
@@ -363,12 +381,12 @@
 
     });
 
-    //Why doesn't click work as an event for this?
-    $('div.the-game').on('shown.bs.collapse', function(event){
-        var game = this;
-        window.scrollTo($(game).offset().left, $(game).offset().top);
-        console.log(game);
-    });
+    // //Why doesn't click work as an event for this?
+    // $('div.the-game').on('shown.bs.collapse', function(event){
+    //     var game = this;
+    //     window.scrollTo($(game).offset().left, $(game).offset().top);
+    //     console.log(game);
+    // });
 
     // $('#dvworld').on('shown.bs.collapse', function () {
     //   this.scrollIntoView();
@@ -390,6 +408,23 @@
     //         window.scrollTo($(this).offset().left, $(this).offset().top);
     //     }
     // });
+
+    //This is working but I'd like it to start happening when I'm opening up the thing instead of after it's finished.
+    $('.the-game[data-toggle="collapse"]').on('click', function(event) {
+        var target = $(event.target).data('target');
+        var isOpen = $(target).hasClass('show');
+        var isOtherOpen = !! $(target).siblings('.collapse.show').length;
+        if (isOpen && ! isOtherOpen) event.stopPropagation();
+        if (isOtherOpen) $('.collapse-sub').collapse('hide');
+        // window.scrollTo($(target).offset().left, $(target).offset().top);
+
+        $(target).on('shown.bs.collapse', function(event){
+            var game = this;
+            console.log(game);
+            $('html, body').animate({scrollTop: $(game).offset().top}, 1000);
+            //window.scrollTo($(game).offset().left, $(game).offset().top);
+        });
+    });
 
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
