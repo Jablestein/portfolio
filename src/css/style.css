@@ -12,6 +12,10 @@ body {
 .no-point {
   pointer-events: none; }
 
+.games-tab {
+  background-color: #5296A5;
+  color: #fff; }
+
 .bg-black {
   background: #000;
   color: #fff; }

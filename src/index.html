@@ -78,7 +78,8 @@
             <!-- <h3>What have I built?</h3>
             <p class="card-text">consectetur adipisicing elit. Dolorum nulla et, modi harum hic deserunt.</p> -->
             <div class="row no-gutters">
-                <div class="col-md-3 the-game">
+                <!-- TODO: Figure out why I seem to need both data-collapse and data-target on the div as well as the img. -->
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#dvworld">
                     <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" data-toggle="collapse"
                     data-target="#dvworld">
                     <!-- <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="#lightbox">
@@ -92,44 +93,61 @@
                         <img src="img/dwarvenden/dwarven-den1.png" alt="" class="img-fluid">
                     </a> -->
                 </div>
-                <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=yBWcOUBpa_8" data-toggle="lightbox">
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#ragdollblaster3">
+                    <img src="img/rdb3/rb3logo.png" alt="" class="img-fluid"
+                    data-toggle="collapse" data-target="#ragdollblaster3">
+                    <!-- <a href="https://www.youtube.com/watch?v=yBWcOUBpa_8" data-toggle="lightbox"
+                    data-toggle="collapse" data-target="#dwarvenden">
                         <img src="img/rdb3/rb3logo.png" alt="" class="img-fluid">
-                    </a>
+                    </a> -->
                 </div>
-                <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=3uMJqyw1xn0" data-toggle="lightbox">
-                        <img src="img/bossbattles/bossbattleslogo.png" alt="" class="img-fluid" style="width:100%; height:100%;">
-                    </a>
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#bossbattles">
+                    <img src="img/bossbattles/bossbattleslogo.png" alt="" class="img-fluid" style="width:100%; height:100%;"
+                    data-toggle="collapse" data-target="#bossbattles">
+                    <!-- <a href="https://www.youtube.com/watch?v=3uMJqyw1xn0" data-toggle="lightbox">
+                        <img src="img/bossbattles/bossbattleslogo.png" alt="" class="img-fluid" style="width:100%; height:100%;"
+                        data-toggle="collapse" data-target="#dwarvenden">
+                    </a> -->
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
-                        <img src="img/thshred/thshredlogo.png" alt="" class="img-fluid">
-                    </a>
-
+            <div class="row no-gutters" >
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#thshred">
+                    <img src="img/thshred/thshredlogo.png" alt="" class="img-fluid"
+                    data-toggle="collapse" data-target="#thshred">
+                    <!-- <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+                        <img src="img/thshred/thshredlogo.png" alt="" class="img-fluid"
+                        data-toggle="collapse" data-target="#dwarvenden">
+                    </a> -->
                 </div>
-                <div class="col-md-3">
-                    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
-                        <img src="img/thride/thridelogo.png" alt="" class="img-fluid">
-                    </a>
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#thride">
+                    <img src="img/thride/thridelogo.png" alt="" class="img-fluid"
+                    data-toggle="collapse" data-target="#thride">
+                    <!-- <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+                        <img src="img/thride/thridelogo.png" alt="" class="img-fluid"
+                        data-toggle="collapse" data-target="#dwarvenden">
+                    </a> -->
                 </div>
-                <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=wnbnrfRIEEg" data-toggle="lightbox">
-                        <img src="img/conduit/Conduit-logo.png" alt="" class="img-fluid">
-                    </a>
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#conduit">
+                    <img src="img/conduit/Conduit-logo.png" alt="" class="img-fluid"
+                    data-toggle="collapse" data-target="#conduit">
+                    <!-- <a href="https://www.youtube.com/watch?v=wnbnrfRIEEg" data-toggle="lightbox">
+                        <img src="img/conduit/Conduit-logo.png" alt="" class="img-fluid"
+                        data-toggle="collapse" data-target="#dwarvenden">
+                    </a> -->
                 </div>
-                <div class="col-md-3">
-                    <a href="https://www.youtube.com/watch?v=BxAHhXAw870" data-toggle="lightbox">
-                        <img src="img/aats/aats-logo.png" alt="" class="img-fluid">
-                    </a>
+                <div class="col-md-3 the-game" data-toggle="collapse" data-target="#americasarmy">
+                    <img src="img/aats/aats-logo.png" alt="" class="img-fluid"
+                    data-toggle="collapse" data-target="#americasarmy">
+                    <!-- <a href="https://www.youtube.com/watch?v=BxAHhXAw870" data-toggle="lightbox">
+                        <img src="img/aats/aats-logo.png" alt="" class="img-fluid"
+                        data-toggle="collapse" data-target="#dwarvenden">
+                    </a> -->
                 </div>
             </div>
         </div>
 
-        <div id="dvworld" class="collapse the-game">
-            <div class="card card-body bg-primary text-white py-5">
+        <div id="dvworld" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white">
                 <h6><i>Lead Game Designer - Dragonvale World - iOS/Android</i></h6>
                     <ul>
                         <li>Designing systems and features such as Dragon Breeding, Events and Social Features.</li>
@@ -145,6 +163,8 @@
             </div>
         </div>
 
+        <!-- I had it kind of working with this method. Taylor suggested the collapse-sub class instead
+        Went that way for now, but I'd like to try and figure out the differences between the two approaches.         -->
         <!-- <div id="dwarvenden" class="collapse the-game">
             <div class="card card-body bg-primary text-white py-5">
                 <h6><i>Lead Game Designer - Dwarven Den - iOS</i></h6>
@@ -162,19 +182,84 @@
 
         <div id="dwarvenden" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Drarven Den</i></h6>
+                <h6><i>Lead Game Designer - Dwarven Den - iOS</i></h6>
                     <ul>
-                        <li>A bunch of shit here</li>
-                        <li>A bunch more shit</li>
-                        <li>Oh look at me, I'm so important I did stuff with dwarves in dens</li>
+                        <li>Designed and implemented nearly fifty levels of content for final version of game.</li>
+                        <li>Overseeing and providing feedback on creation of level content by three other members of
+                        the design team.</li>
+                        <li>Analyzing live game retention and monetization numbers and developing design solutions
+                        targeted at addressing concerns of such metrics.</li>
+                        <li>Collaborated in the design of core systems, mechanics, player abilities, gear, perks, and
+                        social features.</li>
+                    </ul>
             </div>
         </div>
 
         <div id="ragdollblaster3" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Ragdoll Blaster 3</i></h6>
+                <h6><i>Senior Level Designer - Ragdoll Blaster 3 - iOS</i></h6>
+                    <ul>
+                        <li>Designed and implemented various levels of content for final version of the game using in
+                        house tools.</li>
+                        <li>Collaborated with other designers on potential monetization strategies for a non Free to
+                        Play, level driven game.</li>
+                    </ul>
             </div>
         </div>
+
+        <div id="bossbattles" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Game Designer - Boss Battles - iOS</i></h6>
+                    <ul>
+                        <li>Came onto project in development as the only designer and was responsible for analyzing
+                        and tuning all gameplay content, narrative and improving overall gameplay in order to
+                        create a fun, shippable game.</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="thshred" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Game Designer - Tony Hawk Shred - Xbox 360/PS3/Nintendo Wii</i></h6>
+                    <ul>
+                        <li>Responsible for the design and implementation of the “Trick” game mode.</li>
+                        <li>Design and implementation of level data such as power ups, trick lines, and nav guide paths
+                       for casual mode.
+                    </ul>
+            </div>
+        </div>
+
+        <div id="thride" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Game Designer - Tony Hawk Ride - Xbox 360/PS3/Nintendo Wii</i></h6>
+                    <ul>
+                        <li>Responsible for the design and implementation of the “Trick” game mode.</li>
+                        <li>Design and implementation of level data such as power ups, trick lines, and nav guide paths
+                       for casual mode.
+                    </ul>
+            </div>
+        </div>
+
+        <div id="conduit" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Game Designer - The Conduit - Nintendo Wii</i></h6>
+                    <ul>
+                        <li>Design and implementation of Tutorial, White House and Airport levels of the game.</li>
+                        <li>Collaborating on the design of weapons, powerups, enemy abilities and narrative of the
+                        game.</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="americasarmy" class="collapse collapse-sub">
+            <div class="card card-body bg-primary text-white py-5">
+                <h6><i>Game Designer - America’s Army: True Soldiers - Xbox 360</i></h6>
+                    <ul>
+                        <li>Design and implementation of multiple training and mission modes seen in the game.</li>
+                    </ul>
+            </div>
+        </div>
+
     </div>
 
 
@@ -255,17 +340,16 @@
                     <h6>January 2007 - August 2008</h6>
                     <h6>Hoffman Estates, IL</h6>
                     <br>
-                    <h6><i>Game Designer - The Conduit - Nintendo Wii</i></h6>
-                    <ul>
-                        <li>Design and implementation of Tutorial, White House and Airport levels of the game.</li>
-                        <li>Collaborating on the design of weapons, powerups, enemy abilities and narrative of the
-                        game.</li>
-                    </ul>
-
-                    <h6><i>Game Designer - America’s Army: True Soldiers - Xbox 360</i></h6>
-                    <ul>
-                        <li>Design and implementation of multiple training and mission modes seen in the game.</li>
-                    </ul>
+                        <h6><i>Game Designer - The Conduit - Nintendo Wii</i></h6>
+                            <ul>
+                                <li>Design and implementation of Tutorial, White House and Airport levels of the game.</li>
+                                <li>Collaborating on the design of weapons, powerups, enemy abilities and narrative of the
+                                game.</li>
+                            </ul>
+                        <h6><i>Game Designer - America’s Army: True Soldiers - Xbox 360</i></h6>
+                            <ul>
+                                <li>Design and implementation of multiple training and mission modes seen in the game.</li>
+                            </ul>
                 <br>
                 <hr id="hr-large">
                 <br>
@@ -364,17 +448,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 
   <script>
-    // Original
-    // =========
-    // $('.port-item').click(function(){
-    //         $('.collapse').collapse('hide');
-    // });
 
+    //For collapsing and opening Tabs.
     $('.port-item[data-toggle="collapse"]').on('click', function(event) {
         var target = $(event.target).data('target');
         var isOpen = $(target).hasClass('show');
-        console.log(isOpen);
-        console.log(target);
+        // console.log(isOpen);
+        // console.log(target);
         var isOtherOpen = !! $(target).siblings('.collapse.show').length;
         if (isOpen && ! isOtherOpen) event.stopPropagation();
         if (isOtherOpen) $('.collapse').collapse('hide');
