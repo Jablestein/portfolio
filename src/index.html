@@ -75,12 +75,10 @@
         </div>
 
         <div class="card card-body py-5">
-            <!-- <h3>What have I built?</h3>
-            <p class="card-text">consectetur adipisicing elit. Dolorum nulla et, modi harum hic deserunt.</p> -->
             <div class="row no-gutters">
                 <!-- TODO: Figure out why I seem to need both data-collapse and data-target on the div as well as the img. -->
                 <div class="col-md-3 the-game" data-toggle="collapse" data-target="#dvworld">
-                    <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" data-toggle="collapse"
+                    <img src="img/dvworld/DVWorldLogoWBackground2.png" alt="" class="img-fluid" data-toggle="collapse"
                     data-target="#dvworld">
                     <!-- <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="#lightbox">
                         <img src="img/dvworld/dragonvale-world1.png" alt="" class="img-fluid" >
@@ -102,7 +100,7 @@
                     </a> -->
                 </div>
                 <div class="col-md-3 the-game" data-toggle="collapse" data-target="#bossbattles">
-                    <img src="img/bossbattles/bossbattleslogo.png" alt="" class="img-fluid" style="width:100%; height:100%;"
+                    <img src="img/bossbattles/bossbattleslogostretched.png" alt="" class="img-fluid"
                     data-toggle="collapse" data-target="#bossbattles">
                     <!-- <a href="https://www.youtube.com/watch?v=3uMJqyw1xn0" data-toggle="lightbox">
                         <img src="img/bossbattles/bossbattleslogo.png" alt="" class="img-fluid" style="width:100%; height:100%;"
@@ -128,7 +126,7 @@
                     </a> -->
                 </div>
                 <div class="col-md-3 the-game" data-toggle="collapse" data-target="#conduit">
-                    <img src="img/conduit/Conduit-logo.png" alt="" class="img-fluid"
+                    <img src="img/conduit/ConduitLogo.png" alt="" class="img-fluid"
                     data-toggle="collapse" data-target="#conduit">
                     <!-- <a href="https://www.youtube.com/watch?v=wnbnrfRIEEg" data-toggle="lightbox">
                         <img src="img/conduit/Conduit-logo.png" alt="" class="img-fluid"
@@ -148,7 +146,38 @@
 
         <div id="dvworld" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white">
-                <h6><i>Lead Game Designer - Dragonvale World - iOS/Android</i></h6>
+                <!-- TODO: See if there's a better way to handle the Carousel. Right now i'm duplicating this everytime
+                instead of making it a single element that gets fed the proper data for the particular game selected.
+                This doesn't seem efficient. -->
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <!-- TODO: Turn these into individual Tabs that the reader can switch between, similar to our current
+                tabs for games, resume, etc. -->
+                <div>
+                    <h3>Lead Game Designer - Dragonvale World - iOS/Android</h3>
+                    <h6>Responsibilities</h6>
                     <ul>
                         <li>Designing systems and features such as Dragon Breeding, Events and Social Features.</li>
                         <li>Responsible for guiding and providing feedback on the design of game systems and features
@@ -160,6 +189,16 @@
                         <li>Additionally overseeing in house narrative design and outsourced localization efforts and
                         creation and implementation of definition data required to get content into the game.</li>
                     </ul>
+                    <!-- TODO: Actually fill this out with content. -->
+                    <!-- <h6>Challenges</h6>
+                    <ul>
+                        <li>Making a sequel follow up for a live and still successful original game.</li>
+                    </ul>
+                    <h6>Lessons Learned</h6>
+                    <ul>
+                        <li>Test</li>
+                    </ul> -->
+                </div>
             </div>
         </div>
 
@@ -182,7 +221,33 @@
 
         <div id="dwarvenden" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Lead Game Designer - Dwarven Den - iOS</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3><i>Lead Game Designer - Dwarven Den - iOS</i></h3>
+                    <h6>Responsibilities</h6>
                     <ul>
                         <li>Designed and implemented nearly fifty levels of content for final version of game.</li>
                         <li>Overseeing and providing feedback on creation of level content by three other members of
@@ -192,76 +257,247 @@
                         <li>Collaborated in the design of core systems, mechanics, player abilities, gear, perks, and
                         social features.</li>
                     </ul>
+                    <!-- TODO: Actually fill this out with content. -->
+                    <!-- <h6>Challenges</h6>
+                    <ul>
+                        <li>Making a sequel follow up for a live and still successful original game.</li>
+                    </ul>
+                    <h6>Lessons Learned</h6>
+                    <ul>
+                        <li>Test</li>
+                    </ul> -->
+                </div>
             </div>
         </div>
 
         <div id="ragdollblaster3" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Senior Level Designer - Ragdoll Blaster 3 - iOS</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3>Senior Level Designer - Ragdoll Blaster 3 - iOS</h3>
+                    <h6>Respponsibilities</h6>
                     <ul>
                         <li>Designed and implemented various levels of content for final version of the game using in
                         house tools.</li>
                         <li>Collaborated with other designers on potential monetization strategies for a non Free to
                         Play, level driven game.</li>
                     </ul>
+                </div>
             </div>
         </div>
 
         <div id="bossbattles" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Game Designer - Boss Battles - iOS</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3>Game Designer - Boss Battles - iOS</h3>
+                    <h6>Responsibilies</h6>
                     <ul>
                         <li>Came onto project in development as the only designer and was responsible for analyzing
                         and tuning all gameplay content, narrative and improving overall gameplay in order to
                         create a fun, shippable game.</li>
                     </ul>
+                </div>
             </div>
         </div>
 
         <div id="thshred" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Game Designer - Tony Hawk Shred - Xbox 360/PS3/Nintendo Wii</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3>Game Designer - Tony Hawk Shred - Xbox 360/PS3/Nintendo Wii</h3>
+                    <h6>Responsibilities</h6>
                     <ul>
                         <li>Responsible for the design and implementation of the “Trick” game mode.</li>
                         <li>Design and implementation of level data such as power ups, trick lines, and nav guide paths
                        for casual mode.
                     </ul>
+                </div>
             </div>
         </div>
 
         <div id="thride" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Game Designer - Tony Hawk Ride - Xbox 360/PS3/Nintendo Wii</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3>Game Designer - Tony Hawk Ride - Xbox 360/PS3/Nintendo Wii</h3>
+                    <h6>Responsibilies</h6>
                     <ul>
                         <li>Responsible for the design and implementation of the “Trick” game mode.</li>
                         <li>Design and implementation of level data such as power ups, trick lines, and nav guide paths
                        for casual mode.
                     </ul>
+                </div>
+
             </div>
         </div>
 
         <div id="conduit" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Game Designer - The Conduit - Nintendo Wii</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3>Game Designer - The Conduit - Nintendo Wii</h3>
+                    <h6>Responsibilities</h6>
                     <ul>
                         <li>Design and implementation of Tutorial, White House and Airport levels of the game.</li>
                         <li>Collaborating on the design of weapons, powerups, enemy abilities and narrative of the
                         game.</li>
                     </ul>
+                </div>
             </div>
         </div>
 
         <div id="americasarmy" class="collapse collapse-sub">
             <div class="card card-body bg-primary text-white py-5">
-                <h6><i>Game Designer - America’s Army: True Soldiers - Xbox 360</i></h6>
+                <div id="slider2" class="carousel slide mb-5" data-ride="carousel">
+                  <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="https://www.youtube.com/watch?v=SJnJLQIbAxQ" data-toggle="lightbox">
+                            <img src="img/dvworld/DVWorldYouTube.png" alt="" class="d-block img-fluid " >
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldHatch.png" alt="Second Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldDiscover.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block img-fluid" src="img/dvworld/DVWorldExplore.png" alt="Third Slide">
+                    </div>
+                  </div>
+                  <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a href="#slider2" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                <div>
+                    <h3><i>Game Designer - America’s Army: True Soldiers - Xbox 360</i></h3>
+                    <h6>Responsibilies</h6>
                     <ul>
                         <li>Design and implementation of multiple training and mission modes seen in the game.</li>
                     </ul>
+                </div>
             </div>
         </div>
-
     </div>
-
 
     <!-- Resume -->
     <div id="resume" class="collapse">
@@ -507,8 +743,24 @@
     });
 
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        console.log("We should be opening a Lightbox");
         event.preventDefault();
         $(this).ekkoLightbox();
+    });
+
+    //Relating to the Carousel
+    $('.carousel').carousel({
+      interval:3000,
+      keyboard: true,
+      pause:'hover',
+      wrap:true
+    });
+
+    $('#slider4').on('slide.bs.carousel', function(){
+      console.log('slide');
+    });
+    $('#slider4').on('slid.bs.carousel', function(){
+      console.log('slid');
     });
   </script>
 </body>
