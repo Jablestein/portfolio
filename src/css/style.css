@@ -69,15 +69,14 @@ body {
   .port-item {
     padding: 3em !important; } }
 
+/*=============*/
 /*Games Gallery*/
-
-.game-wrapper {
-  width: 100%;
-  margin: 3px; auto;
-}
+/*=============*/
 
 div.game-gallery {
-  margin-top: 30px;
+  /*A wrapper for the game gallery and it's CSS classes.
+  Not really necessary, but in the future you might
+  need it for positioning or something.*/
 }
 
 div.game-gallery ul {
@@ -85,41 +84,47 @@ div.game-gallery ul {
   margin-left: 35px;
 }
 
-/* game gallery */
 div.game-gallery ul li, div.game-gallery li img {
-  -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+  /*Easing function http://easings.net/#easeInSine */
+  -webkit-transition: all 125ms cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: all 125ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 div.game-gallery ul li {
   position: relative;
   float: left;
+  /*Height, width, and spacing of each box*/
   width: 220px;
-  height: 220px; 
-  margin: 5px; 
-  padding: 5px;
+  height: 220px;
+  margin: 4px;
+  /*Put's everything on the same z level so that 
+  the hover can raise the hovered item to the top*/
   z-index: 0;
 }
 
 div.game-gallery ul li img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  border: 1px solid #dddddd;
+  /*For some reason if you don't set the image to the max height 
+  and width of it's container, the transition looks weird*/
   width: 100%;
   height: 100%;
-  background: #f0f0f0;
+  /*A border, because it just looks better with a border*/
+  border: 1px solid #000000 /*#dddddd;*/
 }
 
 div.game-gallery ul li img:hover {
+  /*Slightly increase the box size and add a shadow 
+  to give the appearance of rising off the page*/
   width: 103%;
   height: 103%;
-  margin: 3%;
   box-shadow: -5px -10px 15px #888888;
+  /*Slightly increase the margin which causes 
+  a downward and to the right movement*/
+  margin: 3%;
+  /*A border, because it just looks better with a border.  Still...*/
+  border: 1px solid #000000 /*#dddddd;*/
 }
 
 div.game-gallery ul li:hover {
-  z-index: 5;
+  /*Ensures that the hovered over item is always on top*/
+  z-index: 69; /*Get it? 69? hahahahaha.*/
 }
