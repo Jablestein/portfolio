@@ -68,3 +68,58 @@ body {
 @media (min-width: 1199px) {
   .port-item {
     padding: 3em !important; } }
+
+/*Games Gallery*/
+
+.game-wrapper {
+  width: 100%;
+  margin: 3px; auto;
+}
+
+div.game-gallery {
+  margin-top: 30px;
+}
+
+div.game-gallery ul {
+  list-style-type: none;
+  margin-left: 35px;
+}
+
+/* game gallery */
+div.game-gallery ul li, div.game-gallery li img {
+  -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+div.game-gallery ul li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 220px; 
+  margin: 5px; 
+  padding: 5px;
+  z-index: 0;
+}
+
+div.game-gallery ul li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #dddddd;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+}
+
+div.game-gallery ul li img:hover {
+  width: 103%;
+  height: 103%;
+  margin: 3%;
+  box-shadow: -5px -10px 15px #888888;
+}
+
+div.game-gallery ul li:hover {
+  z-index: 5;
+}
